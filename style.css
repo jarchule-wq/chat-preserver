@@ -23,3 +23,7 @@ th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom
 .tablewrap { overflow-x: auto; }
 footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 @media (max-width: 600px) { .hero, .grid { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+.signup { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.signup span { display: inline-block; margin-top: 8px; }
+.button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 10px 18px; border-radius: 8px; }
+.button:hover { filter: brightness(1.08); }
