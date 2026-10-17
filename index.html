@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Chat Preserver: save whole ChatGPT chats and their files</title>
+<meta name="description" content="Save a whole ChatGPT chat: every message, every file (even the ones ChatGPT made), checked and in a searchable offline reader.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="top"><a href="./"><img src="icon.svg" alt=""></a><a href="./">Chat Preserver</a></header>
+
+  <section class="hero">
+    <img src="icon.svg" alt="Chat Preserver icon: a chat bubble inside a life ring">
+    <div>
+      <h1>Keep the whole conversation.</h1>
+      <p class="sub">Every message, every file, even the ones ChatGPT made. Checked, saved to your computer, and readable offline.</p>
+      <p class="cta">A browser extension for Chrome and Edge. Coming soon to the Chrome Web Store and Edge Add-ons.</p>
+    </div>
+  </section>
+
+  <h2>What makes it different</h2>
+  <div class="grid">
+    <div><h3>The files, not just the words</h3><p>Uploads, images and the files ChatGPT created while running code are downloaded and linked where they appear.</p></div>
+    <div><h3>Checked, not hoped</h3><p>The chat is captured twice, two different ways, and the captures are compared. Anything ChatGPT no longer has is listed by name, never silently dropped.</p></div>
+    <div><h3>Proof you can keep</h3><p>Every file gets a SHA-256 fingerprint, and the whole chat gets a content fingerprint that stays the same each time you save an unchanged chat.</p></div>
+    <div><h3>A reader, not a dump</h3><p>One offline page with search, filters, jump-to-message, a side rail for long chats, images inline and working file links.</p></div>
+    <div><h3>Private by design</h3><p>Runs in your browser and saves to a folder you choose. No account, no server, nothing uploaded.</p></div>
+    <div><h3>Works on work accounts</h3><p>ChatGPT Team, Enterprise and Edu workspaces have no built-in export. If you can open the chat in your browser, you can save it.</p></div>
+    <div><h3>Quick or Full</h3><p>Quick saves every message and the reader in about 20 seconds. Full adds every file in a few minutes, and can run later into the same folder.</p></div>
+    <div><h3>Polite to ChatGPT</h3><p>Downloads are paced, slow down automatically if ChatGPT asks, and pick up where they left off.</p></div>
+  </div>
+
+  <h2>Good to know before you start</h2>
+  <ul>
+    <li><strong>Files ChatGPT creates expire.</strong> Files made while ChatGPT runs code (charts, spreadsheets, zips) are kept by ChatGPT for a limited time. Save chats with generated files soon. Expired files can't be recovered by anyone; the reader lists them by name.</li>
+    <li><strong>Deleted or unavailable files can't be recovered.</strong> If ChatGPT no longer has a file, it's listed as missing, never faked.</li>
+    <li><strong>It saves what ChatGPT still shows.</strong> Edited messages and regenerated answers are saved as ChatGPT keeps them. Anything ChatGPT has already discarded is gone.</li>
+    <li><strong>One chat at a time.</strong> It saves the chat you have open, not your whole account.</li>
+    <li><strong>Desktop browser, signed in.</strong> Chrome or Edge on a computer. It only saves chats your account can open.</li>
+    <li><strong>Quick mode doesn't download files.</strong> Run Full later into the same folder to add them.</li>
+    <li><strong>Keep the tab open.</strong> Closing the tab or putting the computer to sleep stops the run. Start again with the same name and folder to resume.</li>
+    <li><strong>It depends on ChatGPT's website.</strong> If OpenAI changes how ChatGPT works, saving may stop working until an update is released.</li>
+    <li><strong>Work accounts are your responsibility.</strong> Check your organization's policy before saving work chats.</li>
+    <li><strong>You keep the copy safe.</strong> Everything is saved only on your computer. We never see it, so we can't restore it if you lose it.</li>
+    <li><strong>What the fingerprints prove.</strong> They show a saved file hasn't changed since it was saved. They don't certify what ChatGPT said for legal purposes.</li>
+  </ul>
+
+  <footer>
+    <p><a href="privacy/">Privacy policy</a> · Contact: <a href="mailto:chatpreserver.help@gmail.com">chatpreserver.help@gmail.com</a></p>
+    <p>Chat Preserver is not affiliated with or endorsed by OpenAI. ChatGPT is a trademark of OpenAI.</p>
+  </footer>
+</main>
+</body>
+</html>
