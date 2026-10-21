@@ -30,3 +30,12 @@ footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
 .urgent { margin: 8px 0 0; padding: 4px 20px 16px; border-left: 4px solid #e5484d; background: var(--card); border-radius: 0 10px 10px 0; }
 .urgent h2 { margin-top: 12px; }
 .urgent p { margin: 0; }
+
+/* Email updates signup (Kit form, posted without Kit's script) */
+.updates { margin: 40px 0 8px; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; text-align: center; }
+.updates h2 { margin-top: 0; }
+.updates form { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 14px 0 6px; }
+.updates input { flex: 1 1 240px; max-width: 360px; font: inherit; font-size: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: inherit; }
+.updates button { border: 0; cursor: pointer; font-family: inherit; }
+.updates .fine { font-size: 13px; color: var(--muted); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
