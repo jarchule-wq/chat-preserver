@@ -13,12 +13,12 @@
   <header class="top"><a href="../"><img src="../icon.svg" alt=""></a><a href="../">Chat Preserver</a></header>
 
   <h1 style="margin-top:32px">Privacy Policy</h1>
-  <p class="sub">Last updated 17 October 2026</p>
+  <p class="sub">Last updated 21 October 2026</p>
 
   <h2>The short version</h2>
-  <p>Chat Preserver collects nothing. It runs entirely in your browser, saves your ChatGPT chat only to a folder you choose on your computer, and never sends your chats or files to us or to anyone else. The only thing it sends outside ChatGPT is a Chat Preserver Pro license key, to Lemon Squeezy, to check that it's valid.</p>
+  <p>Chat Preserver collects nothing. It runs entirely in your browser, saves your ChatGPT chat only to a folder you choose on your computer, and never sends your chats or files to us or to anyone else. The only service it talks to besides ChatGPT is ExtensionPay, our payment service, to know whether your copy has Pro. That check carries a random ID, never your chats.</p>
   <ul>
-    <li>No account, no sign-up, no server of ours.</li>
+    <li>No sign-up to use it, and no server of ours.</li>
     <li>No analytics, tracking, ads or cookies.</li>
     <li>Your chats and files never leave your computer, except for the requests your browser already makes to ChatGPT to load them.</li>
   </ul>
@@ -30,11 +30,11 @@
     <tbody>
       <tr><td>activeTab</td><td>Access to the current tab, only after you click the button</td><td>To read the ChatGPT conversation you chose to save</td></tr>
       <tr><td>scripting</td><td>Running the saving code in that tab</td><td>The saving code runs inside the ChatGPT page so it can use your existing ChatGPT sign-in</td></tr>
-      <tr><td>storage</td><td>Keeping a small setting inside the extension</td><td>To remember your Pro license key on this computer, so you enter it once</td></tr>
-      <tr><td>api.lemonsqueezy.com</td><td>Contacting Lemon Squeezy's license service</td><td>To activate and check a Pro license key. Nothing about your chats is sent</td></tr>
+      <tr><td>storage</td><td>Keeping a small setting inside the extension</td><td>To remember whether this copy has Pro, and the random ID ExtensionPay uses for it</td></tr>
+      <tr><td>extensionpay.com</td><td>Contacting ExtensionPay, and running its small script on its own payment and sign-in pages</td><td>To check whether this copy has Pro, and to finish a purchase or restore. Nothing about your chats is sent</td></tr>
     </tbody>
   </table></div>
-  <p>It asks for no standing access to any website except Lemon Squeezy's license service, and does nothing in the background.</p>
+  <p>It asks for no standing access to any website except extensionpay.com, and never reads or saves anything in the background.</p>
   <p>While saving, it reads from ChatGPT, through your own signed-in session:</p>
   <ul>
     <li>the messages of the open conversation;</li>
@@ -47,7 +47,7 @@
   <ul>
     <li><strong>Saved files:</strong> the transcript, the reader page, every recovered file, and a run report listing what was saved and checked. Nothing else is kept.</li>
     <li><strong>Network requests:</strong> the extension talks to ChatGPT (chatgpt.com and the file links ChatGPT itself provides) to save your chat. It never contacts a server of ours.</li>
-    <li><strong>License check (Pro only):</strong> when you enter a Pro license key, the extension sends the key and a computer label such as "Chat Preserver on Edge, Windows" to Lemon Squeezy (api.lemonsqueezy.com) to activate it. After that it re-checks the key at most once a week, and when you choose "Remove from this computer" it tells Lemon Squeezy to free that activation. The key is kept only inside the extension on your computer. The free version never makes these requests.</li>
+    <li><strong>Pro check:</strong> when Chat Preserver is installed, ExtensionPay (extensionpay.com) gives this copy a random ID, which is stored inside the extension. When you click the toolbar button, the extension sends that ID to ExtensionPay to ask whether this copy has Pro. The ID isn't tied to you unless you buy Pro or restore a purchase, which links it to the email you enter. If ExtensionPay can't be reached, a copy confirmed as Pro in the last 30 days keeps working.</li>
     <li><strong>Offline reader:</strong> the reader page loads nothing from the internet. It works with the network switched off.</li>
     <li><strong>Not saved:</strong> sign-in tokens, cookies and ChatGPT's temporary download links are used only while saving and are never written into your folder.</li>
   </ul>
@@ -64,7 +64,7 @@
 
   <h2>Payments, children, changes and contact</h2>
   <p><strong>Launch list.</strong> If you email us to join the launch list, we keep your email address only to send you one launch email, then delete it. It is never shared or sold. This is separate from the extension, which still collects nothing.</p>
-  <p><strong>Payments.</strong> Chat Preserver Pro is sold by Lemon Squeezy, our reseller and merchant of record. Lemon Squeezy collects your payment details, email and billing country under <a href="https://www.lemonsqueezy.com/privacy">its own privacy policy</a>, and emails you the license key. We receive your order details (name, email, country, what you bought) so we can support you and handle refunds, and never your card details. We don't use them for marketing unless you ask us to.</p>
+  <p><strong>Payments.</strong> You buy Chat Preserver Pro inside the extension. The checkout is run by ExtensionPay, which keeps your email and whether you've paid so you can restore Pro on another computer (<a href="https://extensionpay.com/privacy">ExtensionPay's privacy policy</a>). Stripe processes the card payment and collects your card details and billing address (<a href="https://stripe.com/privacy">Stripe's privacy policy</a>). We see your name, email, country and what you bought so we can support you and handle refunds, and never your card number. We don't use them for marketing unless you ask us to.</p>
   <p><strong>Children.</strong> Chat Preserver is not directed at children under 13. The extension collects no information from anyone.</p>
   <p><strong>Changes.</strong> If this policy changes, the new version will be posted here with a new date. A change that would collect any data will be announced in the extension's store listing first.</p>
   <p><strong>Contact.</strong> Questions about privacy: <a href="mailto:support@chatpreserver.com">support@chatpreserver.com</a>.</p>
