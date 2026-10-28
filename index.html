@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Chat Preserver: save whole ChatGPT chats and projects, with their files</title>
-<meta name="description" content="Save a whole ChatGPT chat, or a whole ChatGPT project in one run: every message, every file (even the ones ChatGPT made), checked and in a searchable offline reader.">
+<title>Chat Preserver: back up your ChatGPT and Claude chats, with their files</title>
+<meta name="description" content="Back up your whole ChatGPT and Claude account, every night: every chat, project and file, checked, versioned and in a searchable offline reader.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,9 +17,9 @@
     <img src="icon.svg" alt="Chat Preserver icon: a chat bubble inside a life ring">
     <div>
       <h1>Keep the whole conversation.</h1>
-      <p class="sub">One chat or a whole ChatGPT project. Every message, every file, even the ones ChatGPT made. Checked, saved to your computer, and readable offline.</p>
-      <p class="cta"><a class="button" href="https://chromewebstore.google.com/detail/lnanhkpmopngcncfocjbonpcolkplkpj">Add to Chrome, free</a><a class="button" href="https://microsoftedge.microsoft.com/addons/detail/ndkpbcppocceaidgeeogmkhkhfbmdhgp">Add to Edge, free</a><a class="button secondary" href="pricing/">Pro: $19.99, one-time</a><br><span>A browser extension for Chrome and Edge, free on the Chrome Web Store and Microsoft Edge Add-ons.</span></p>
-      <p class="signup"><span>Install free, then upgrade inside Chat Preserver with one payment of $19.99. No subscription. Try it risk-free: full refund within 14 days, no questions asked.</span></p>
+      <p class="sub">ChatGPT and Claude. One chat, one project or your whole account, every night. Every message, every file, even the ones the AI made. Checked, saved to your computer, and readable offline.</p>
+      <p class="cta"><a class="button" href="https://chromewebstore.google.com/detail/lnanhkpmopngcncfocjbonpcolkplkpj">Add to Chrome, free</a><a class="button" href="https://microsoftedge.microsoft.com/addons/detail/ndkpbcppocceaidgeeogmkhkhfbmdhgp">Add to Edge, free</a><a class="button secondary" href="pricing/">Pro: $19.99 launch price, one-time</a><br><span>A browser extension for Chrome and Edge, free on the Chrome Web Store and Microsoft Edge Add-ons.</span></p>
+      <p class="signup"><span>Install free, then upgrade inside Chat Preserver with one payment. 3.0 launch price: $19.99 until December 1, 2026, then $29.99. Bought Pro for 2.x? 3.0 is included. No subscription. Try it risk-free: full refund within 14 days, no questions asked.</span></p>
     </div>
   </section>
 
@@ -32,8 +32,14 @@
   <p>Open a project in ChatGPT and click once. Chat Preserver saves every chat in the project and every file on its Sources tab into one folder, then writes a project index page linking each chat's reader and each source file. Each chat gets the same full treatment as a single save: transcript, files, checks and its own searchable reader.</p>
   <p>If the run is interrupted, start it again with the same folder: chats and files already saved are skipped, and it picks up where it stopped.</p>
 
-  <h2>Claude support is on the way</h2>
-  <p>Chat Preserver is adding Claude conversations and projects, with the same files, verification and offline reader. Buy Pro now and you'll get it free when it arrives.</p>
+  <h2>Back up your whole account, every night</h2>
+  <p>Press <strong>Back up everything</strong> once and Chat Preserver saves every chat and project in your account into one folder, with an index page for all of it. Turn on the nightly schedule and it does it again by itself, saving only what is new or changed. When a chat changes, the new copy goes into a dated folder next to the old one, so earlier versions are kept.</p>
+
+  <h2>ChatGPT and Claude, one purchase</h2>
+  <p>Claude chats and projects get the same treatment: every message, the files, the project's threads and shared folder, and Claude's published pages and Docs, each checked and in the offline reader. One Pro purchase covers both sites, and one page searches the backups of both.</p>
+
+  <h2>Find any file, without a full backup</h2>
+  <p>Find a file lists the files across your whole account by name, including files inside zips. Search by name, chat, type, date or size, tick what you need, and only those files are saved. See the <a href="faq/#find">search tips</a>.</p>
 
   <h2>What makes it different</h2>
   <div class="grid">
@@ -54,12 +60,12 @@
   <ul>
     <li><strong>Files ChatGPT creates expire.</strong> Files made while ChatGPT runs code (charts, spreadsheets, zips) are kept by ChatGPT for a limited time. Save chats with generated files soon. Expired files can't be recovered by anyone; the reader lists them by name.</li>
     <li><strong>Deleted or unavailable files can't be recovered.</strong> If ChatGPT no longer has a file, it's listed as missing, never faked.</li>
-    <li><strong>It saves what ChatGPT still shows.</strong> Edited messages and regenerated answers are saved as ChatGPT keeps them. Anything ChatGPT has already discarded is gone.</li>
-    <li><strong>One chat or one project at a time.</strong> It saves the chat or the project you have open, not your whole account.</li>
+    <li><strong>It saves what the site still has.</strong> Edited messages and regenerated answers are saved as the site keeps them. Anything already discarded is gone. ChatGPT sends only a summary of its thinking, and Claude sends none, so the AI's full thinking can't be saved.</li>
+    <li><strong>Scheduled backups need your browser open.</strong> If the browser is closed or the computer asleep at backup time, the backup runs soon after you open it. The first one may ask you to allow the folder; see the <a href="faq/#schedule">FAQ</a>.</li>
     <li><strong>Desktop browser, signed in.</strong> Chrome or Edge on a computer. It only saves chats your account can open.</li>
     <li><strong>Quick mode doesn't download files.</strong> Run Full later into the same folder to add them.</li>
-    <li><strong>Keep the tab open.</strong> Closing the tab or putting the computer to sleep stops the run. Start again with the same name and folder to resume.</li>
-    <li><strong>It depends on ChatGPT's website.</strong> If OpenAI changes how ChatGPT works, saving may stop working until an update is released.</li>
+    <li><strong>Keep the tab open.</strong> Closing the tab or putting the computer to sleep stops the run. Start again with the same folder to resume; finished chats are not saved again.</li>
+    <li><strong>It depends on ChatGPT's and Claude's websites.</strong> If OpenAI or Anthropic changes how their site works, saving may stop working until an update is released.</li>
     <li><strong>Work accounts are your responsibility.</strong> Check your organization's policy before saving work chats.</li>
     <li><strong>You keep the copy safe.</strong> Everything is saved only on your computer. We never see it, so we can't restore it if you lose it.</li>
     <li><strong>What the fingerprints prove.</strong> They show a saved file hasn't changed since it was saved. They don't certify what ChatGPT said for legal purposes.</li>
@@ -77,7 +83,7 @@
   </section>
 
   <footer>
-    <p><a href="pricing/">Pricing</a> · <a href="refunds/">Refunds</a> · <a href="terms/">Terms</a> · <a href="privacy/">Privacy</a> · Contact: <a href="mailto:support@chatpreserver.com">support@chatpreserver.com</a></p>
+    <p><a href="pricing/">Pricing</a> · <a href="faq/">FAQ</a> · <a href="refunds/">Refunds</a> · <a href="terms/">Terms</a> · <a href="privacy/">Privacy</a> · Contact: <a href="mailto:support@chatpreserver.com">support@chatpreserver.com</a></p>
     <p>Follow: <a href="https://www.youtube.com/@ChatPreserver">YouTube</a> · <a href="https://x.com/chatpreserver">X</a> · <a href="https://www.linkedin.com/company/chat-preserver">LinkedIn</a> · <a href="https://www.reddit.com/user/ChatPreserverDev">Reddit</a></p>
     <p>Chat Preserver is not affiliated with or endorsed by OpenAI or Anthropic. ChatGPT is a trademark of OpenAI. Claude is a trademark of Anthropic.</p>
   </footer>
