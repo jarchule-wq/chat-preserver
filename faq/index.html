@@ -37,10 +37,11 @@
       <tr><td>chatgpt.com and claude.ai</td><td>So a scheduled backup can run at the time you set without you clicking the button. Before 3.0, Chat Preserver could only work on a tab right after you clicked it. It still acts on these sites only when you click, or at the backup time you chose.</td></tr>
       <tr><td>frame.claudeusercontent.com</td><td>Claude shows published pages and artifacts in a frame from this address. Chat Preserver reads them so they are saved with the chat.</td></tr>
       <tr><td>Alarms</td><td>To wake up at your backup time.</td></tr>
-      <tr><td>Notifications</td><td>To tell you a backup finished, or that it needs one click from you.</td></tr>
+      <tr><td>Downloads ("Manage your downloads")</td><td>To save scheduled backups into your Downloads folder, in Downloads\Chat Preserver, without asking you each night. It only adds files there, never deletes them, and copies only files that are new or changed.</td></tr>
+      <tr><td>Notifications</td><td>To tell you a backup finished, or, if you picked your own folder, that it needs one click from you.</td></tr>
     </tbody>
   </table></div>
-  <p>None of these send your chats anywhere. Everything is still saved only to the folder you choose. See the <a href="../privacy/">privacy policy</a>.</p>
+  <p>None of these send your chats anywhere. Everything is still saved only on your computer, in Downloads\Chat Preserver or the folder you choose. See the <a href="../privacy/">privacy policy</a>.</p>
 
   <h3>I bought Pro for 2.x. Do I pay again?</h3>
   <p>No. 3.0 is included with every 2.x purchase. If Pro shows as off, choose "Already bought? Restore purchase" and enter the email you paid with.</p>
@@ -54,7 +55,7 @@
   <p>Every chat and project your account lists, with its messages, files and an offline reader for each chat, plus an index page for the whole backup. ChatGPT and Claude each get their own folder, "ChatGPT backup" and "Claude backup". Later backups save only chats that are new or changed.</p>
 
   <h3>What happens when a chat changes?</h3>
-  <p>The chat is saved again in full, into a new folder named with the date and time, next to the earlier copy. By default Chat Preserver keeps the last 5 versions of each chat; you can keep all of them or only the newest. An older version is removed only after a newer one has been saved.</p>
+  <p>The chat is saved again in full, into a new folder named with the date and time, next to the earlier copy. In a folder you picked, Chat Preserver keeps the last 5 versions of each chat by default (you can keep all of them or only the newest), and removes an older version only after a newer one has been saved. In Downloads\Chat Preserver nothing is ever deleted, so every version stays until you remove it.</p>
 
   <h3>How do I know the backup is complete?</h3>
   <p>Each saved file gets a SHA-256 fingerprint, and each backup lists what it found and what it saved. Anything the site no longer has, or would not give back, is listed by name with the reason, never silently left out.</p>
@@ -67,11 +68,11 @@
 
   <h2 id="schedule">Scheduled backups</h2>
 
-  <h3>Why did my first scheduled backup ask me to click?</h3>
-  <p>The first time a scheduled backup runs, your browser asks once whether Chat Preserver may keep writing to your backup folder. Click the notification, press Start backup, and when the browser asks about the folder choose <strong>"Allow on every visit"</strong>. Later backups then run by themselves. If you chose "Allow this time", you will see the notification again next time; choose "Allow on every visit" then.</p>
+  <h3>Do scheduled backups need me to click anything?</h3>
+  <p>No, not by default. Scheduled backups save into your Downloads folder, in <strong>Downloads\Chat Preserver</strong>, and run by themselves with no click. The first backup there is a full one; after that, each backup copies only new or changed files.</p>
 
-  <h3>Can I give the folder permission during setup, so the first night needs no click?</h3>
-  <p>Yes. After your first backup from a site, close every tab of that site (chatgpt.com or claude.ai), open Chat Preserver's settings and press <strong>Test automatic backup now</strong> for that account. It runs just like the night run. If the browser asks about your folder, choose "Allow on every visit" then. Notifications need no permission; the extension may show them from the moment it is installed (Windows Focus Assist or Do Not Disturb can hide them).</p>
+  <h3>Can scheduled backups go to a folder I choose instead?</h3>
+  <p>Yes: in Chat Preserver's settings, choose <strong>A folder I pick</strong>. Browsers only let an extension keep writing to a folder you picked until the browser is closed, so after each browser restart the first scheduled backup shows a notification. Click it, press Start backup and choose <strong>Allow</strong> when the browser asks about the folder. Backups then run by themselves until the next restart. If you don't want that click, keep the Downloads option.</p>
 
   <h3>Do I need a ChatGPT or Claude tab open?</h3>
   <p>No. While your browser is open, Chat Preserver opens the site in a background tab at the scheduled time, backs up, and closes the tab. The toolbar button shows RUN while it works. If the browser was closed or the computer asleep at that time, the backup runs soon after you open it.</p>
@@ -80,13 +81,16 @@
   <p>They share one schedule and run one after the other, ChatGPT first. If a backup is already running (for example one you started yourself), the scheduled one waits and tries again every 15 minutes, so you may see a tab open and close briefly.</p>
 
   <h3>Where do the backups go?</h3>
-  <p>Each account gets its own folder, "ChatGPT backup" and "Claude backup". Pick the same folder for both (the one that holds them, not one of them) and a page there, "Chat Preserver backups.html", searches the files of both.</p>
+  <p>Scheduled backups go to <strong>Downloads\Chat Preserver</strong> unless you chose a folder yourself. Inside are "ChatGPT backup", "Claude backup" and a page, "Chat Preserver backups.html", that searches the files of both. If you pick your own folder, pick the same one for both accounts (the one that holds them, not one of them) and you get the same page there.</p>
+
+  <h3>Does Chat Preserver ever delete files from my Downloads folder?</h3>
+  <p>No. It only adds new and changed files there. Old versions stay until you delete them yourself.</p>
 
   <h3>Can I stop a backup part-way?</h3>
   <p>Yes: press "Stop after this chat". The next backup into the same folder continues where it stopped; finished chats are not saved again.</p>
 
   <h3>The notification only appears in the Windows notification panel, with no pop-up.</h3>
-  <p>Windows shows pop-ups ("banners") only if they are turned on for your browser: Settings → System → Notifications → Google Chrome (or Microsoft Edge) → turn on "Show notification banners", and check that Do Not Disturb is off.</p>
+  <p>Windows shows pop-ups ("banners") only if they are turned on for your browser: Settings → System → Notifications → Google Chrome (or Microsoft Edge) → turn on "Show notification banners", and check that Do Not Disturb is off. Notifications need no extra permission from you; Windows Focus Assist or Do Not Disturb can hide them.</p>
 
   <h2 id="pauses">When ChatGPT asks it to slow down</h2>
 

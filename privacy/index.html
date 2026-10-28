@@ -16,7 +16,7 @@
   <p class="sub">Last updated 28 October 2026</p>
 
   <h2>The short version</h2>
-  <p>Chat Preserver collects nothing. It runs entirely in your browser, saves your ChatGPT and Claude chats only to a folder you choose on your computer, and never sends your chats or files to us or to anyone else. The only service it talks to besides ChatGPT and Claude is ExtensionPay, our payment service, to know whether your copy has Pro. That check carries a random ID, never your chats.</p>
+  <p>Chat Preserver collects nothing. It runs entirely in your browser, saves your ChatGPT and Claude chats only to your own computer, and never sends your chats or files to us or to anyone else. The only service it talks to besides ChatGPT and Claude is ExtensionPay, our payment service, to know whether your copy has Pro. That check carries a random ID, never your chats.</p>
   <ul>
     <li>No sign-up to use it, and no server of ours.</li>
     <li>No analytics, tracking, ads or cookies.</li>
@@ -34,7 +34,8 @@
       <tr><td>chatgpt.com, claude.ai</td><td>Running the saving code on these two sites without a click</td><td>Only for scheduled backups you turned on: at your chosen time it opens the site in a background tab, saves what changed, and closes the tab</td></tr>
       <tr><td>frame.claudeusercontent.com</td><td>Reading the frames Claude uses to show published pages and artifacts</td><td>So those pages are saved with the chat they belong to</td></tr>
       <tr><td>alarms</td><td>Waking the extension at a set time</td><td>To start a scheduled backup at the time you chose</td></tr>
-      <tr><td>notifications</td><td>Showing a system notification</td><td>To tell you a backup finished, or that it needs one click from you</td></tr>
+      <tr><td>downloads</td><td>Saving files into your Downloads folder</td><td>So scheduled backups can save into Downloads\Chat Preserver without asking you each night. It only adds new or changed files there and never deletes anything</td></tr>
+      <tr><td>notifications</td><td>Showing a system notification</td><td>To tell you a backup finished, or, if you picked your own folder, that it needs one click from you</td></tr>
       <tr><td>extensionpay.com</td><td>Contacting ExtensionPay, and running its small script on its own payment and sign-in pages</td><td>To check whether this copy has Pro, and to finish a purchase or restore. Nothing about your chats is sent</td></tr>
     </tbody>
   </table></div>
@@ -48,10 +49,10 @@
   </ul>
 
   <h2>Where your data goes</h2>
-  <p>Everything Chat Preserver saves goes to one place: the folder you pick on your own computer.</p>
+  <p>Everything Chat Preserver saves goes to one place on your own computer: the folder you pick, or for scheduled backups Downloads\Chat Preserver unless you chose a folder.</p>
   <ul>
     <li><strong>Saved files:</strong> the transcript, the reader page, every recovered file, a run report listing what was saved and checked, and for account backups an index page and a small state file recording what has been saved so later backups can skip it. Nothing else is kept.</li>
-    <li><strong>Kept in your browser:</strong> your backup schedule and choices, and, so a scheduled backup can write to it, your browser's permission for the backup folder you picked. These stay on this computer.</li>
+    <li><strong>Kept in your browser:</strong> your backup schedule and choices, and, if you picked your own backup folder, your browser's permission to write to it. These stay on this computer.</li>
     <li><strong>Network requests:</strong> the extension talks to ChatGPT (chatgpt.com and the file links ChatGPT itself provides) and Claude (claude.ai and Claude's own frame and file addresses) to save your chats. It never contacts a server of ours.</li>
     <li><strong>Pro check:</strong> when Chat Preserver is installed, ExtensionPay (extensionpay.com) gives this copy a random ID, which is stored inside the extension. When you click the toolbar button, the extension sends that ID to ExtensionPay to ask whether this copy has Pro. The ID isn't tied to you unless you buy Pro or restore a purchase, which links it to the email you enter. If ExtensionPay can't be reached, a copy confirmed as Pro in the last 30 days keeps working.</li>
     <li><strong>Offline reader:</strong> the reader page loads nothing from the internet. It works with the network switched off.</li>
