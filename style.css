@@ -52,3 +52,14 @@ footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
 .faq p, .faq ul { margin: 6px 0; }
 .toc { columns: 2; font-size: 15px; } @media (max-width: 600px) { .toc { columns: 1; } }
 code { font-size: 0.92em; background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
+
+/* Home: Free vs Pro summary */
+.plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0 0 28px; }
+.plans > div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+.plans > div:last-of-type { border: 2px solid var(--accent); }
+.plans h3 { font-size: 20px; margin: 0; }
+.plans .price { margin: 2px 0 6px; font-weight: 700; }
+.plans .price span { display: block; font-weight: 400; font-size: 14px; color: var(--muted); }
+.plans ul { margin: 0; font-size: 15px; } .plans li { margin: 4px 0; }
+.plans .more { grid-column: 1 / -1; margin: 0; font-size: 15px; }
+@media (max-width: 600px) { .plans { grid-template-columns: 1fr; } }
