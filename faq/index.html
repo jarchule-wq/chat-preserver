@@ -20,7 +20,7 @@
     <li><a href="#update">The 3.0 update and its permissions</a></li>
     <li><a href="#saved">What gets saved</a></li>
     <li><a href="#schedule">Scheduled backups</a></li>
-    <li><a href="#pauses">When a backup pauses or doesn't finish</a></li>
+    <li><a href="#pauses">Slow first backups, pauses and backups that don't finish</a></li>
     <li><a href="#find">Find a file and search</a></li>
     <li><a href="#help">Getting help</a></li>
   </ul>
@@ -92,10 +92,18 @@
   <h3>The notification only appears in the Windows notification panel, with no pop-up.</h3>
   <p>Windows shows pop-ups ("banners") only if they are turned on for your browser: Settings → System → Notifications → Google Chrome (or Microsoft Edge) → turn on "Show notification banners", and check that Do Not Disturb is off. Notifications need no extra permission from you; Windows Focus Assist or Do Not Disturb can hide them.</p>
 
-  <h2 id="pauses">When a backup pauses or doesn't finish</h2>
+  <h2 id="pauses">Slow first backups, pauses and backups that don't finish</h2>
 
-  <h3>Why is my first ChatGPT backup slow?</h3>
-  <p>Each chat is read page by page with pauses, so ChatGPT does not slow down or block the backup. Later backups save only chats that changed.</p>
+  <h3 id="first-backup">Why is my first ChatGPT backup so slow?</h3>
+  <p>Because ChatGPT limits how fast any one account can read its own chats. A first backup reads every chat and every file in your account, and ChatGPT soon starts answering "slow down". Chat Preserver then waits, as ChatGPT asks, and carries on. You will see "ChatGPT asked to slow down. Continuing in 2 minutes." That pause comes from ChatGPT, not from Chat Preserver, and it is not a problem with your account.</p>
+  <p>So a first backup of a large account can take hours. In our own test, an account with about 190 chats took several hours. Each chat is also read page by page with short pauses, so the backup doesn't slow ChatGPT down for you while it runs.</p>
+  <p>It only happens once. Later backups save only the chats that are new or changed, and usually finish in minutes.</p>
+  <p>For the first backup:</p>
+  <ul>
+    <li>Start it when you won't need the computer for a while, for example in the evening.</li>
+    <li>Keep the computer awake. If it goes to sleep the backup stops; on a Mac, set "Prevent automatic sleeping" in System Settings, or keep the lid open on a laptop.</li>
+    <li>Leave the chatgpt.com tab open. If anything stops it, start again into the same place: everything already saved is skipped.</li>
+  </ul>
 
   <h3>My ChatGPT backup "paused part-way" and says ChatGPT asked it to slow down. What does that mean?</h3>
   <p>ChatGPT limits how many requests one account can make in a short time (you may see this called "HTTP 429" or "too many requests"). A whole-account backup reads every chat and file, so a large backup, especially the first one, can reach that limit. It is temporary and is not a problem with your account, and nothing already saved is lost. Chat Preserver first waits on its own (2, 5, 10, then 20 minutes) and carries on. If ChatGPT still says slow down after that, the backup pauses:</p>
